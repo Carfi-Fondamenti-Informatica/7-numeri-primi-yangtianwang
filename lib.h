@@ -1,1 +1,1 @@
-
+bool numerip(int,int);
