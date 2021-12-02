@@ -1,14 +1,13 @@
-#include<iostream>
 #include"lib.h"
-using namespace std;
-int main(){
-  int n=0;
-  cin>>n;
-  if(numerip(n,n-1)){
-    cout<<"numero primo";
-  }else{
-    cout<<"numero non primo";
+bool numeriprimi(int n, int a){
+  if(n<0){
+    return false
+    }else if (n==1){
+    return true;
+  }else if (a==1){
+    return true;
+  }else if (n%a==0){
+    return false;
   }
-  
-  return 0:
+  numeriprimi(n,--a);
 }
